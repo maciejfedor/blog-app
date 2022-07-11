@@ -77,3 +77,5 @@ group :production do
 end
 
 gem 'cssbundling-rails'
+
+gem 'jquery-rails' 
