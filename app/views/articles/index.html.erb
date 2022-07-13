@@ -3,6 +3,12 @@
 <br>
 
 <h1 class = "text-center p-3">All Articles List</h1>
+<div class="flickr_pagination">
+    <%= will_paginate @articles, :container => false %>
+</div>
 <%= render 'article' %>
+<div class="flickr_pagination mb-4">
+    <%= will_paginate @articles, :container => false %>
+</div>
 <p class = "text-center  text-decoration-none" ><%= link_to '[Create new article]', new_article_path %></p>
 
