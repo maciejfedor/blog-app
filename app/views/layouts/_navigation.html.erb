@@ -21,6 +21,10 @@
     <li class="nav-item">
     <%= link_to "Edit profile", edit_user_path(current_user),  class: "nav-link text-body" %>
     </li>
+    <li class="nav-item">
+    <%= button_to "Delete profile", user_path(current_user),  class: "nav-link text-danger btn btn-link", method: :delete, data: {confirm: "Are you sure ?"}, "data-turbo": false %>
+   
+    </li>
     </ul>
   </li>
   <li class="nav-item">
