@@ -1,24 +1,26 @@
-# README
+# Ruby on Rails Blog App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Overview
 
-Things you may want to cover:
+[Live Site](https://maciej-blog-app.herokuapp.com/)
 
-* Ruby version
+Non-logged users should be able to:
 
-* System dependencies
+- Sign in using
+- View articles and another Bloggers accounts
+- View categories
 
-* Configuration
+Signed-in users should be able to:
 
-* Database creation
+- Log in with existing account
+- View articles
+- Add and edit new articles
+- Assign category tags to articles
+- Delete own account
 
-* Database initialization
+Additionaly admin user can:
 
-* How to run the test suite
+- Delete accounts and articles
+- Edit and add new category names
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Frontend styling was made with Bootstrap
