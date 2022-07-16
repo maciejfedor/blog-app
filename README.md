@@ -6,7 +6,7 @@ LIVE SITE: [https://maciej-blog-app.herokuapp.com/](https://maciej-blog-app.hero
 
 Non-logged users should be able to:
 
-- Sign in using
+- Sign in
 - View articles and another Bloggers accounts
 - View categories
 
