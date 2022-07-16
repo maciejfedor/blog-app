@@ -13,10 +13,17 @@
     <%= link_to gravatar_for(user, size:150 ), user  %></h5>
     <p class="card-text"><%=pluralize(user.articles.count, "article") %></p>
    
+    <div class = "d-flex justify-content-center flex-md-row gap-3">
     <%= link_to 'View profile', user, class: "btn btn-outline-success"  %> 
-    <% if logged_in? && user == current_user %>
+    <% if logged_in? %> 
+    <% if user == current_user %>
     <%= link_to 'Edit profile', edit_user_path(user), class: "btn btn-outline-info"  %>
     <% end %>
+    <% if current_user.admin? %>
+      <%= button_to 'Delete user', user_path(user), method: :delete,  data: {confirm: "Are you sure ?"} , "data-turbo": false, class: "btn btn-outline-danger"  %> 
+    <% end %>
+    <% end %>
+    </div>
   </div>
   <div class = "card-footer text-muted"><small>Joined <%=time_ago_in_words(user.created_at) %> ago</small></div>
 </div>
@@ -27,4 +34,4 @@
 
 <div class="flickr_pagination mb-4">
     <%= will_paginate @users, :container => false %>
-</div
+</div>
