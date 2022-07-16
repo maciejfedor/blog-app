@@ -1,4 +1,4 @@
-require 'debug'
+
 
 class ArticlesController < ApplicationController
   before_action :set_article, only: [:show, :edit, :update, :destroy]
@@ -22,7 +22,7 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    debugger
+  
     @article = Article.new(article_params)
     @article.user = current_user
    if @article.save
