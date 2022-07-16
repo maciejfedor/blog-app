@@ -6,8 +6,15 @@
 <div class="card text-center shadow  mb-5 bg-white rounded">
   <h5 class="card-header fst-italic">
   <% if article.user %>
-  by <%= link_to article.user.username, user_path(article.user) %></h5>
+  by <%= link_to article.user.username, user_path(article.user) %>
   <% end %>
+  <% if article.categories.any? %>
+
+  <div class="mt-2"><%= render article.categories %></div>
+
+  <% end %>
+  </h5>
+ 
   <div class="card-body ">
     <h5 class="card-title"><%= link_to article.title, article_path(article), class: "text-success text-decoration-none" %></h5>
     <p class="card-text"><%= truncate(article.description, length: 100) %></p>
@@ -22,7 +29,7 @@
  
 
   </div>
-  <div class = "card-footer text-muted"><small>Created <%=time_ago_in_words(article.created_at) %> ago, edited <%=time_ago_in_words(article.updated_at) %> ago</small></div>
+  <div class = "card-footer text-muted"></div>
 </div>
 </div>
 </div>
