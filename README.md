@@ -2,7 +2,7 @@
 
 ## Overview
 
-[Live Site](https://maciej-blog-app.herokuapp.com/)
+LIVE SITE: [https://maciej-blog-app.herokuapp.com/](https://maciej-blog-app.herokuapp.com/)
 
 Non-logged users should be able to:
 
