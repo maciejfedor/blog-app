@@ -24,3 +24,6 @@ Additionaly admin user can:
 - Edit and add new category names
 
 Frontend styling was made with Bootstrap
+
+
+App based on project off of online course 'The Complete Ruby on Rails Developer Course'
